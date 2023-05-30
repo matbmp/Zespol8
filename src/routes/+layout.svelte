@@ -41,7 +41,7 @@
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<img src="/umk.svg" alt="" width="40" height="40" />
+				<img src="umk.svg" alt="" width="40" height="40" />
 			</svelte:fragment>
 			Programowanie zespołowe - zespół 8
 			<svelte:fragment slot="trail">

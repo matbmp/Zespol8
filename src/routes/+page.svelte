@@ -8,7 +8,7 @@
 </script>
 
 <div class="pagebody">
-	<div style:background-image="url(/uplash-nurse.jpg)" style:background-position="center">
+	<div style:background-image="url(uplash-nurse.jpg)" style:background-position="center">
 		<div class="w-full h-full variant-glass">
 			<div class="w-full mx-auto p-4">
 				<div class=" rounded-2xl p-6 flex flex-wrap items-center justify-center">
@@ -26,8 +26,8 @@
 						</div>
 					</div>
 					<div class="hidden lg:flex bg-slate-100 p-4 rounded-2xl h-[52rem]">
-						<img src="/app2.png" alt="" class="rounded-2xl" />
-						<img src="/app3.png" alt="" class="rounded-2xl" />
+						<img src="app2.png" alt="" class="rounded-2xl" />
+						<img src="app3.png" alt="" class="rounded-2xl" />
 					</div>
 				</div>
 			</div>
