@@ -50,10 +50,7 @@
 						<a
 							href={button.href}
 							class="btn mx-2 variant-filled-primary"
-							on:click={(e) =>
-								document
-									.getElementById(new URL(e.currentTarget.href).hash.replace('#', ''))
-									?.scrollIntoView({behavior: 'smooth'}, )}
+							
 						>
 							{button.text}
 						</a>

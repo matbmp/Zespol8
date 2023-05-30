@@ -5,13 +5,38 @@
 	import Pdf from 'virtual:icons/mdi/file-pdf-box';
 </script>
 
-<div id='team' class="contain variant-filled-secondary">
+<div class='pagebody'>
+<div style:background-image="url(/uplash-nurse.jpg)" style:background-position="center">
+	<div class="w-full h-full variant-glass">
+		<div class="w-full mx-auto p-4">
+			<div class=" rounded-2xl p-6 flex flex-wrap items-center justify-center">
+				<div class="w-full lg:w-1/2 pb-4">
+					<span class="text-6xl lg:text-8xl"> MediCase </span>
+					<div class="text-xl lg:text-3xl py-2">
+						Aplikacja przeznaczona dla studentów medycyny uczących się przeprowadzać wywiad medyczny
+						w obcym języku. Jest oparta na modelu komunikacji <span class="font-bold"
+							>Calgary-Cambridge</span
+						>, obejmuje
+						<span class="text-blue-900 font-semibold">treści tekstowe, audio, oraz video.</span>
+						Pozwala na dynamiczne dodawanie i modyfikację treści oraz dostępnych dla użytkownika języków.
+						Dodawanie treści jest wspomagane przez
+						<span class='font-semibold'>sztuczną inteligencję</span>.
+					</div>
+				</div>
+				<div class="hidden lg:flex bg-slate-100 p-4 rounded-2xl h-[52rem]">
+					<img src="/app2.png" alt="" class="rounded-2xl" />
+					<img src="/app3.png" alt="" class="rounded-2xl" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="team" class="contain variant-filled-secondary">
 	<div class="w-full lg:w-2/3 mx-auto">
 		<div class="head">Nasz zespół</div>
 
-		<div
-			class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-3"
-		>
+		<div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-3">
 			{#each teammates as teammate}
 				<div class="flex flex-col card items-center p-4 variant-outline-surface shadow-xl">
 					<Account class="text-9xl text-primary" />
@@ -23,7 +48,7 @@
 	</div>
 </div>
 
-<div id='harmonogram' class="contain">
+<div id="harmonogram" class="contain">
 	<div class="w-full lg:w-2/3 mx-auto">
 		<div class="head">Harmonogram</div>
 
@@ -54,7 +79,7 @@
 	</div>
 </div>
 
-<div id='progress' class="contain">
+<div id="progress" class="contain">
 	<div class="w-full lg:w-2/3 mx-auto">
 		<div class="head">Przebieg prac</div>
 
@@ -76,13 +101,11 @@
 	</div>
 </div>
 
-<div id='raports' class="contain variant-filled-secondary">
+<div id="raports" class="contain variant-filled-secondary">
 	<div class="w-full lg:w-2/3 mx-auto">
 		<div class="head">Raporty semestralne</div>
 
-		<div
-			class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-3"
-		>
+		<div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-3">
 			{#each raports as raport}
 				<a
 					href={raport.download}
@@ -97,21 +120,26 @@
 	</div>
 </div>
 
-<div id='docs' class="contain">
+<div id="docs" class="contain">
 	<div class="w-full lg:w-2/3 mx-auto">
 		<div class="head">Dokumentacja</div>
 	</div>
 </div>
 
-<style lang='postcss'>
-	.contain{
-		@apply shadow-lg py-6 lg:py-16 px-2
+</div>
+
+<style lang="postcss">
+	.pagebody{
+		overflow-y: auto;
+		scroll-behavior: smooth;
 	}
-	.head{
-		@apply flex justify-center text-4xl lg:text-6xl pb-12
+	.contain {
+		@apply shadow-lg py-6 lg:py-16 px-2;
+	}
+	.head {
+		@apply flex justify-center text-4xl lg:text-6xl pb-12;
 	}
 
-	.contain2{
-
+	.contain2 {
 	}
 </style>
